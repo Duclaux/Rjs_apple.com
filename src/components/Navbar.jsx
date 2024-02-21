@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       {/* div principale */}
-      <div className='bg-[#000000d2] backdrop-blur-md z-10 relative'>
+      <div className='bg-[#000000d2] backdrop-blur-md absolute top-0 z-10 w-full'>
         
         {/* conteneur de la navbar */}
         <Container>

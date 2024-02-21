@@ -20,7 +20,7 @@ const Hero = () => {
         <img src={Figure1} alt="" className='w-[100%] object-cover lg:object-contain h-[548px] lg:h-auto'/>
 
         {/* conteneur du text */}
-        <div className='absolute bottom-[90px] lg:bottom-[130px] right-[50%] translate-x-[50%]'>
+        <div className='absolute bottom-[40px] lg:bottom-[130px] right-[50%] translate-x-[50%]'>
             <div className='flex items-center w-fit mx-auto'>
                 <img src={Apple} alt="" className='w-[25px] h-[30px] lg:w-[50px] lg:h-[55px]'/>
                 <h1 className='font-bold text-[30px] lg:text-6xl'>Vision Pro</h1>
@@ -53,7 +53,7 @@ const Hero = () => {
         {/* conteneur du text */}
         <div className='absolute top-[90px] lg:top-[130px] right-[50%] translate-x-[50%]'>
             <div className='flex items-center w-fit mx-auto'>
-                <h1 className='font-bold text-[30px] lg:text-6xl text-white'>iPhone 15 Pro</h1>
+                <h1 className='font-bold text-[27px] sm:text-[30px] lg:text-6xl text-white'>iPhone 15 Pro</h1>
             </div>
 
             <div className='text-center'>
@@ -108,15 +108,17 @@ const Hero = () => {
 
   return (
     // block pour le carourel
-    <div className='absolute top-0 z-0 w-[100%]'>
-        {/* composant gerant l'appel du carousel */}
-        <AliceCarousel 
-            items={items}
-            autoPlay={true}
-            infinite={true}
-            autoPlayInterval={2000}
-            mouseTracking={true}
-        />
+    <div className=''>
+        <div className='z-0 relative w-[100%]'>
+            {/* composant gerant l'appel du carousel */}
+            <AliceCarousel 
+                items={items}
+                autoPlay={true}
+                infinite={true}
+                autoPlayInterval={2000}
+                mouseTracking={true}
+            />
+        </div>
     </div>
   )
 }
